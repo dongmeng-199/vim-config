@@ -7,7 +7,7 @@ let g:lazygit_floating_window_corner_chars = ['╭', '╮', '╰', '╯'] " cust
 let g:lazygit_use_neovim_remote = 1 " for neovim-remote support
 
 " setup mapping to call :LazyGit
-nnoremap <silent> <leader>lg :LazyGit<CR>
+" nnoremap <silent> <leader>lg :LazyGit<CR>
 
 
 " nnoremap <silent> <Leader>ga :Git add %:p<CR>

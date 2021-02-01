@@ -52,9 +52,11 @@ nnoremap <leader>qq :call <SID>QuiteVim()<CR>
 nnoremap <leader>qw <esc>:q!<CR>
 
 " Save & quit
-noremap Q :q<CR>
+" noremap Q :q<CR>
+noremap qq : q<CR>
 noremap <C-q> :qa<CR>
-noremap S :w<CR>
+" noremap S :w<CR>
+noremap ss : w<CR>
 
 "switch window
 nnoremap <C-h> <C-w>h

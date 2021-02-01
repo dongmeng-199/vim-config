@@ -4,8 +4,7 @@ set mouse=nv                 " Disable mouse in command-line mode
 set report=0                 " Don't report on line changes
 set errorbells               " Trigger bell on error
 set visualbell               " Use visual bell instead of beeping
-set hidden
-" set hidden                   " hide buffers when abandoned instead of unload
+set hidden                   " hide buffers when abandoned instead of unload
 set fileformats=unix,dos,mac " Use Unix as the standard file type
 set magic                    " For regular expressions turn magic on
 set path+=**                 " Directories to search when using gf and friends
@@ -153,7 +152,7 @@ endif
 " Timing {{{
 " ------
 set timeout ttimeout
-set timeoutlen=500   " Time out on mappings
+set timeoutlen=300   " Time out on mappings
 set ttimeoutlen=10   " Time out on key codes
 set updatetime=100   " Idle time to write swap and trigger CursorHold
 set redrawtime=1500  " Time in milliseconds for stopping display redraw

@@ -6,8 +6,10 @@
   "coc.preferences.messageLevel": "error",
   "coc.source.around.firstMatch": false,
   "coc.source.buffer.firstMatch": false,
+  "coc.source.buffer.enable": false,
+  "coc.source.around.enable": false,
 
-  "codeLens.enable": true, 
+  "codeLens.enable": true,
   "suggest.triggerAfterInsertEnter": false,
   "suggest.timeout": 500,
   "suggest.noselect": false,
@@ -65,8 +67,8 @@
   "git.changeRemovedSign.text": "▋",
   "list.source.files.defaultOptions": ["--auto-preview"],
   "list.source.outline.defaultOptions": ["--auto-preview"],
-  "list.nextKeymap": "<C-n>",
-  "list.previousKeymap": "<C-p>",
+  "list.nextKeymap": "<C-j>",
+  "list.previousKeymap": "<C-k>",
   "coc.preferences.formatOnSaveFiletypes": [
     "html",
     "css",
@@ -146,5 +148,46 @@
     "yaml",
     "yml",
     "vim"
-  ]
+  ],
+  "languageserver": {
+    "bash": {
+      "command": "bash-language-server",
+      "args": ["start"],
+      "ignoredrootpaths": ["~"],
+      "filetypes": ["sh"]
+    },
+    "lua": {
+      "command": "lua-lsp",
+      "filetypes": ["lua"]
+    },
+    "swift": {
+      "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp",
+      "args": [],
+      "filetypes": ["swift"],
+      "initializationOptions": {},
+      "settings": {}
+    },
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".root", ".project", ".svn", ".git"],
+      "disableWorkspaceFolders": "true",
+      "filetypes": ["go"]
+    },
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
+      "rootPatterns": [
+        ".ccls",
+        ".ccls-root",
+        "compile_commands.json",
+        ".git/",
+        ".hg/"
+      ],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        }
+      }
+    }
+  }
 }

@@ -5,6 +5,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'hardcoreplayers/oceanic-material'
 Plug 'mhartington/oceanic-next'
 Plug 'rafi/awesome-vim-colorschemes'
+Plug 'tomasr/molokai'
 
 " startscreen plugin 
 Plug 'hardcoreplayers/dashboard-nvim'
@@ -22,3 +23,7 @@ Plug 'kristijanhusak/defx-git'
 
 " Land on window you chose like tmux's 'display-pane' Resources
 Plug 't9md/vim-choosewin'
+
+" On-demand lazy load
+Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
+

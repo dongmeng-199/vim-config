@@ -7,3 +7,5 @@ Plug 'kdheepak/lazygit.nvim'
 
 
 " let g:committia_min_window_width = 7
+"
+
